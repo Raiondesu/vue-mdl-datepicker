@@ -174,7 +174,7 @@ export default {
 }
 
 .calendar-day-bg {
-  background-color: rgb(0, 151, 167);
+  background-color: grey;
   border-radius: 50%;
   height: 34px;
   left: 4px;
@@ -192,7 +192,7 @@ export default {
 }
 
 .calendar-day-hover {
-  background-color: rgb(0, 151, 167);
+  background-color: grey;
   border-radius: 50%;
   height: 34px;
   left: 4px;
@@ -205,7 +205,7 @@ export default {
 }
 
 .calendar-day-selected {
-  background-color: rgb(0, 151, 167);
+  background-color: grey;
   border-radius: 50%;
   height: 34px;
   opacity: 1;
@@ -226,7 +226,7 @@ export default {
 }
 
 .calendar-today-text {
-  color: rgb(0, 188, 212);
+  color: grey;
 }
 
 .calendar-weekdays {

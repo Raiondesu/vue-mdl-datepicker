@@ -5,7 +5,7 @@
       :handleOpenDialog="handleOpenDialog"
       :formatDate="formatDate"
       placeholder="Choose a day..."
-    ></datepicker-input>
+    ><slot></slot></datepicker-input>
     <div v-if="opened" class="datepicker-root">
       <div class="datepicker-container" :style="datepickerContainerStyle">
         <div class="calendar-container" :style="calendarContainerStyle">

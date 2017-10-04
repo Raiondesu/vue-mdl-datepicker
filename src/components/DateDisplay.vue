@@ -87,7 +87,7 @@ export default {
   float: none;
   font-weight: 700;
   display: inline-block;
-  background-color: rgb(0, 151, 167);
+  background-color: grey;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 0px;
@@ -101,7 +101,7 @@ export default {
   height: 330px;
   float: left;
   font-weight: 700;
-  background-color: rgb(0, 151, 167);
+  background-color: grey;
   border-top-left-radius: 2px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 2px;

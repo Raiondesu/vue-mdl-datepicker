@@ -70,7 +70,7 @@ export default {
 }
 
 .calendar-year-text:hover {
-  color: rgb(0, 188, 212);
+  color: grey;
 }
 
 .calendar-year-text-not-selected {
@@ -80,7 +80,7 @@ export default {
 }
 
 .calendar-year-text-selected {
-  color: rgb(0, 188, 212);
+  color: grey;
   font-size: 26px;
   font-weight: 500;
 }
