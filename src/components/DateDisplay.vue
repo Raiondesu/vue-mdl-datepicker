@@ -101,7 +101,6 @@ export default {
   height: 330px;
   float: left;
   font-weight: 700;
-  display: inline-block;
   background-color: rgb(0, 151, 167);
   border-top-left-radius: 2px;
   border-top-right-radius: 0px;
