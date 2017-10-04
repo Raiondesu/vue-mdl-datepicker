@@ -34,7 +34,7 @@ describe('WeekText.vue', () => {
 
     should.exist(thisComponent.weekdays);
     thisComponent.weekdays.should.have.length(7);
-    thisComponent.weekdays.should.be.eql(dayAbbr);
+    thisComponent.weekdays.should.be.eql(dayAbbr(0));
 
     should.exist(thisComponent.firstDay);
     thisComponent.firstDay.should.be.eql(0);

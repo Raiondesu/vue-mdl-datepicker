@@ -8,7 +8,7 @@
           :maxDate="maxDate"
           :selectedDate="selectedDate"
           :shouldDisableDate="shouldDisableDate"
-          :week="week" v-for="week in weekArray"
+          :week="week" v-for="week in aweekArray"
         ></week-row>
       </div>
     </div>
@@ -56,7 +56,7 @@ export default {
   },
   components: { WeekRow },
   computed: {
-    weekArray() {
+    aweekArray() {
       return getWeekArray(this.displayDate, this.firstDayOfWeek);
     },
   },

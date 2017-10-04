@@ -8,7 +8,7 @@
       </div>
     </div>
     <div :class="dateSelectionStyle">
-      <div @click="selectType('month')" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, opacity 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; opacity: 1; transform: translate(0px, 0px);">
+      <div @click="selectType('month')" style="width: 100%; top: 0px; left: 0px; transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, opacity 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; opacity: 1; transform: translate(0px, 0px);">
         <div :style="displayDateStyle">
           {{displayDate}}
         </div>
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { dayList, monthList } from '../util/dateUtils';
+import { monthList } from '../util/dateUtils';
 import { getComponentRoot } from '../util/componentUtils';
 
 export default {
@@ -55,7 +55,7 @@ export default {
   },
   computed: {
     displayDate() {
-      return `${dayList[this.selectedDate.getDay()]}, ${monthList[this.selectedDate.getMonth()]} ${this.selectedDate.getDate()}`;
+      return `${monthList[this.selectedDate.getMonth()]} ${this.selectedDate.getDate()}`;
     },
     year() {
       return this.selectedDate.getFullYear();
@@ -125,8 +125,6 @@ export default {
 
 .datepicker-date-selection-portrait {
   position: relative;
-  overflow: hidden;
-  height: 38px;
   display: block;
   font-size: 36px;
   line-height: 36px;

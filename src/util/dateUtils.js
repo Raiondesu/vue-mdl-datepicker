@@ -1,4 +1,12 @@
-const dayAbbr = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+const dayAbbr = (firstDayOfWeek = 0) => {
+  const weekdays = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+  for (let i = 0; i < firstDayOfWeek; i++) {
+    const last = weekdays.shift();
+    weekdays.push(last);
+  }
+  return weekdays;
+};
+
 const dayList = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 const monthList = ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сент',
   'Окт', 'Нояб', 'Дек'];

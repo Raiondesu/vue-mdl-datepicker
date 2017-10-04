@@ -6,6 +6,7 @@
         @click="handleOpenDialog(true)"
         type="text" :value="selectedDate" class="datepicker-input-portrait"
       >
+      <img class="arrow" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgc3R5bGU9ImZpbGw6I2JkYmRiZDsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik03LDEwTDEyLDE1TDE3LDEwSDdaIiAvPjwvc3ZnPg==">
       <div>
         <hr class="datepicker-input-underline">
         <hr class="datepicker-input-underline-animation">

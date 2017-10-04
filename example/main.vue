@@ -6,6 +6,7 @@
       :default="date1"
       :maxDate="date1Max"
       orientation="landscape"
+      :first-day-of-week="1"
     ></mdl-datepicker>
 
     <div>{{date2}}</div>
@@ -14,6 +15,7 @@
       :autoOk="true"
       :disableYearSelection="true"
       :formatDate="formatDate"
+      :first-day-of-week="1"
     ></mdl-datepicker>
 
     <div>{{date3}}</div>
@@ -22,6 +24,7 @@
       :minDate="date3Min"
       :maxDate="date3Max"
       :shouldDisableDate="disableWeekends"
+      :first-day-of-week="1"
     ></mdl-datepicker>
   </div>
 </template>

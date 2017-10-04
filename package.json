@@ -13,7 +13,7 @@
     "test": "npm run lint && npm run unit",
     "lint": "eslint --ext=js,vue src",
     "unit": "karma start test/unit/karma.conf.js --single-run",
-    "prepublish": "rm -rf dist && npm run build"
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "vue": "^2.1.3"

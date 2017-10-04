@@ -10,10 +10,6 @@ import { dayAbbr } from '../util/dateUtils';
 export default {
   name: 'week-text',
   props: {
-    weekTextArray: {
-      type: Array,
-      default() { return dayAbbr; },
-    },
     firstDayOfWeek: {
       type: Number,
       default() { return 0; },
@@ -21,12 +17,8 @@ export default {
   },
   data() {
     return {
-      weekdays: this.weekTextArray,
-      firstDay: this.firstDayOfWeek,
+      weekdays: dayAbbr(this.firstDayOfWeek),
     };
-  },
-  beforeMount() {
-    this.weekdays = this.weekdays.concat(this.weekdays.splice(0, this.firstDay));
   },
 };
 </script>
