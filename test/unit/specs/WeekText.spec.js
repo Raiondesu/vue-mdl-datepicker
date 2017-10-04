@@ -42,7 +42,7 @@ describe('WeekText.vue', () => {
 
   it('should setup weekdays and firstDay from props correctly', () => {
     const firstDayOfWeek = 1;
-    const weekTextArray = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+    const weekTextArray = ['Пн', 'Вт', 'Ср', 'Вт', 'Пт', 'Сб', 'Сб'];
     const vm = new Vue({
       render: h => h(WeekText, { props: { firstDayOfWeek } }),
     }).$mount(el);
